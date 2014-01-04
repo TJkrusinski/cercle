@@ -82,4 +82,4 @@ function myInternalEventHandler (data) {
 
 ### Security
 
-I am not a security expert, so I am looking for some guidance on how to implement a proper security system.
+Security will likely be enforce on the plug in level, not in cercle itself.
