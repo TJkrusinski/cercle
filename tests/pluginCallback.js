@@ -7,7 +7,7 @@ var assert = require('chai').assert,
 describe('plugins', function(){
 	describe('plug#pluginCallback()', function(){
 		it('calls the function and returns an event emitter', function(){
-			var obj = plug.pluginCallback({
+			var obj = plug.create({
 				name: 'test',
 			});
 
