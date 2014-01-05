@@ -11,6 +11,10 @@ var sub2 = {
 	id: 'fooid fooid'
 };
 
+var sub3 = {
+	id: 'I am not an astronaut'
+};
+
 var id;
 
 describe('subscribers', function(){
@@ -28,6 +32,16 @@ describe('subscribers', function(){
 	describe('subs#subscribe()', function(){
 		it('subscribes a user to a topic', function(d){
 			subs.subscribe('footopic', sub2, function(err, data){
+				assert.isFalse(err);
+				assert.isObject(data);
+				d();
+			});
+		});
+	});
+
+	describe('subs#subscribe()', function(){
+		it('subscribes a user to a topic', function(d){
+			subs.subscribe('footopic', sub3, function(err, data){
 				assert.isFalse(err);
 				assert.isObject(data);
 				d();
@@ -68,9 +82,9 @@ describe('subscribers', function(){
 		});
 	});
 
-	describe('subs#unsubscribe()', function(){
+	describe('subs#unsubscribeAll()', function(){
 		it('unsubscribes all users', function(d){
-			subs.unsubscribe('footopic', function(err, data){
+			subs.unsubscribeAll('footopic', function(err, data){
 				assert.isFalse(err);
 				d();
 			});
