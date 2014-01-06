@@ -20,8 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "level": "~0.18.0",
-    "uuid": "~1.4.1",
-    "underscore": "~1.5.2"
+    "uuid": "~1.4.1"
   },
   "devDependencies": {
     "chai": "~1.8.1"
