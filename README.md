@@ -130,14 +130,7 @@ plugin.events
 ### Using a plugin
 
 ```javascript
-
-var cercle = require('cercle'),
-	httpCercle = require('cercle-http');
-
-var http = cerlce.plugin(httpCercle, {
-	// options object
-});
-
+// to come
 ```
 
 ### Security
