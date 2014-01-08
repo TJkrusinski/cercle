@@ -28,10 +28,10 @@ var id;
 describe('subscribers', function(){
 	describe('subs#subscribe()', function(){
 		it('subscribes a user to a topic', function(d){
-			subs.subscribe('footopic', sub, function(err, data){
+			id = subs.subscribe('footopic', sub, function(err, data){
+				assert.isString(id);
 				assert.isFalse(err);
 				assert.isObject(data);
-				id = data.id;
 				d();
 			});
 		});
