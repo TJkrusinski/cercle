@@ -1,6 +1,6 @@
 {
   "name": "cercle",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "anything in anything out pub/sub",
   "main": "index.js",
   "directories": {
